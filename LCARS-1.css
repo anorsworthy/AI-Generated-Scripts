@@ -1,0 +1,78 @@
+/* LCARS-inspired custom theme for Jellyfin */
+:root {
+    --primary-color: #455580; /* LCARS orange */
+    --secondary-color: #5588ee; /* LCARS purple */
+    --tertiary-color: #88ffff;
+    --background-color: #000000; /* Black background */
+    --text-color: #cdcdcd; /* White text */
+    --accent-color: #ff3500; /* LCARS red */
+    --test-button-color: #99ccff; /* LCARS green */
+    --test-button-hover-color: #7799dd; /* LCARS blue */
+    --test-button-active-color: #ff9933; /* LCARS amber */
+    --test-button-disabled-color: #666666; /* LCARS gray */
+    --test-button-border-color: #ffaa00; /* LCARS gold */
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Helvetica', sans-serif;
+}
+
+header, .navbar {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 20px;
+    border-bottom: 8px solid var(--tertiary-color);
+}
+
+button, .btn {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0px;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+button:hover, .btn:hover {
+    background-color: var(--accent-color);
+}
+
+.sidebar {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 15px;
+    border-right: 8px solid var(--tertiary-color);
+}
+
+.card {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.card:hover {
+    background-color: var(--accent-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 10px;
+    border-top: 8px solid var(--tertiary-color);
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
